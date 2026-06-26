@@ -2,9 +2,9 @@ diff --git a/app/models/media_attachment.rb b/app/models/media_attachment.rb
 index 2d1b70661..ab2f485f9 100644
 --- a/app/models/media_attachment.rb
 +++ b/app/models/media_attachment.rb
-@@ -39,8 +39,8 @@ class MediaAttachment < ApplicationRecord
- 
-   MAX_DESCRIPTION_LENGTH = 1_500
+@@ -43,8 +43,8 @@ class MediaAttachment < ApplicationRecord
+   MAX_DESCRIPTION_LENGTH = 10_000
+   MAX_DESCRIPTION_HARD_LENGTH_LIMIT = 10_000
  
 -  IMAGE_LIMIT = 16.megabytes
 -  VIDEO_LIMIT = 99.megabytes

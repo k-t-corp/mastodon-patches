@@ -2,9 +2,9 @@ diff --git a/app/models/status.rb b/app/models/status.rb
 index 0bff4f282..a9fab097f 100644
 --- a/app/models/status.rb
 +++ b/app/models/status.rb
-@@ -45,7 +45,7 @@ class Status < ApplicationRecord
-   include Status::Visibility
-   include Status::InteractionPolicyConcern
+@@ -59,7 +59,7 @@ class Status < ApplicationRecord
+     quote: { status: { account: [:account_stat, user: :role] } },
+   ].freeze
  
 -  MEDIA_ATTACHMENTS_LIMIT = 4
 +  MEDIA_ATTACHMENTS_LIMIT = 16
